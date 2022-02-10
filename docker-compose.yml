@@ -1,0 +1,16 @@
+version: '3.9'
+
+services:
+  rabbitmq1:
+    image: rabbitmq:3-management-alpine
+    container_name: 'rabbitmq1'
+    ports:
+      - '5001:5672'
+      - '15001:15672'
+
+  rabbitmq2:
+    image: rabbitmq:3-management-alpine
+    container_name: 'rabbitmq2'
+    ports:
+      - '5002:5672'
+      - '15002:15672'
